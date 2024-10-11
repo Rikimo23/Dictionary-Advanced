@@ -1,0 +1,38 @@
+geography= {"continets": ["North America", "South America", "Africa", "Antarctica", "Australia", "Asia", "Europe"]}
+
+patient= {"name": "John Doe", "age": 25, "height": 64, "symptoms": "cough" }
+
+stock_qty= {"cookies": 3200, "bread": 500, "crackers": 52000, "chips": 2000}
+
+list= [10, 9, 88, 20, 9, 20, 22, 101, 68, 10, 108, 33, 9, 53]
+
+# prompt: Use the same dictionary as above
+# Use a Class method to generate a list of tuples that consists of each key:value pair
+
+patient= {"name": "John Doe", "age": 25, "height": 64, "symptoms": "cough" }
+
+list_of_tuples = list(patient.items())
+print(list_of_tuples)
+
+# prompt: Use the same dictionary as above
+# Use a Class method to print the value of "name'
+
+patient= {"name": "John Doe", "age": 25, "height": 64, "symptoms": "cough" }
+
+print(patient.get("name"))
+
+
+# prompt: Use the same dictionary as above
+# Use a Class method to look for the key "weight", and supply a default arguement of 150 if the value is not found
+
+patient= {"name": "John Doe", "age": 25, "height": 64, "symptoms": "cough" }
+
+print(patient.get("weight", 150))
+
+# prompt: Use the same dictionary as above
+# Use a Class method to remove everything from the dictionary
+
+patient= {"name": "John Doe", "age": 25, "height": 64, "symptoms": "cough" }
+
+patient.clear()
+print(patient)
